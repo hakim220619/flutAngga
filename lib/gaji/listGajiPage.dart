@@ -125,8 +125,6 @@ class _ListGajiPageState extends State<ListGajiPage> {
             final data = jsonDecode(response.body);
             // print(data);
             setState(() async {
-              // _listsData = data['file'];
-              // print(data['file']);
               String url = data['file'];
               var urllaunchable =
                   await canLaunch(url); //canLaunch is from url_launcher package
